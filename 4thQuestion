@@ -1,0 +1,16 @@
+CREATE TABLE marks (
+    sno NUMBER PRIMARY KEY,
+    subject VARCHAR2(50),
+    marks NUMBER
+);
+
+INSERT INTO marks VALUES (1, 'Math', 85);
+INSERT INTO marks VALUES (2, 'Science', 90);
+INSERT INTO marks VALUES (3, 'English', 78);
+INSERT INTO marks VALUES (4, 'History', 88);
+INSERT INTO marks VALUES (5, 'Geography', 92);
+
+-- Aggregate functions
+SELECT MAX(marks) FROM marks;  
+SELECT MIN(marks) FROM marks;  
+SELECT AVG(marks) FROM marks;  
