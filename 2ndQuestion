@@ -1,0 +1,13 @@
+CREATE TABLE department (
+    deptid NUMBER PRIMARY KEY,
+    deptname VARCHAR2(50)
+);
+
+CREATE TABLE student (
+    sno NUMBER PRIMARY KEY,
+    sname VARCHAR2(50),
+    class VARCHAR2(20),
+    age NUMBER,
+    deptid NUMBER,
+    FOREIGN KEY (deptid) REFERENCES department(deptid)
+);
