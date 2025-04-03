@@ -1,0 +1,1 @@
+SELECT deptid, COUNT(*) FROM student GROUP BY deptid;
